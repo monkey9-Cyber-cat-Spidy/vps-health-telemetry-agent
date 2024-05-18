@@ -1,0 +1,8 @@
+{
+  "name": "vps-health-telemetry-agent",
+  "version": "1.5.0",
+  "dependencies": {
+    "systeminformation": "^5.22.0",
+    "axios": "^1.7.4"
+  }
+}
