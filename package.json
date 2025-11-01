@@ -1,8 +1,26 @@
 {
   "name": "vps-health-telemetry-agent",
-  "version": "1.5.0",
+  "version": "1.0.0",
+  "description": "Production lightweight Linux VPS telemetry daemon and REST monitoring microservice with automated threshold alerts and systemd integration.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
   "dependencies": {
-    "systeminformation": "^5.22.0",
-    "axios": "^1.7.4"
-  }
+    "express": "^4.19.2"
+  },
+  "keywords": [
+    "vps-monitoring",
+    "telemetry",
+    "systemd",
+    "linux-metrics",
+    "cpu-monitoring",
+    "memory-alerts",
+    "devops",
+    "node"
+  ],
+  "author": "Kuncham Venkata Satya Manikanta",
+  "license": "MIT"
 }

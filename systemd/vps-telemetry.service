@@ -1,0 +1,16 @@
+[Unit]
+Description=VPS Health Telemetry Daemon Agent
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/vps-health-telemetry-agent
+ExecStart=/usr/bin/node /opt/vps-health-telemetry-agent/src/server.js
+Restart=always
+RestartSec=5s
+Environment=PORT=4000
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
